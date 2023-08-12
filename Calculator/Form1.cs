@@ -229,5 +229,11 @@ namespace Calculator
             //Append "-" to the end of the current text
             textBoxDisplay.Text += "-";
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            //Append "+" to the end of the current text
+            textBoxDisplay.Text +="+";
+        }
     }
 }

@@ -44,7 +44,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.btnPlusMinus = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.btnSubtract = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
@@ -274,19 +274,20 @@
             this.btnEquals.UseVisualStyleBackColor = false;
             this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
-            // button15
+            // btnAdd
             // 
-            this.button15.BackColor = System.Drawing.Color.Silver;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(344, 358);
-            this.button15.Margin = new System.Windows.Forms.Padding(4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(85, 73);
-            this.button15.TabIndex = 15;
-            this.button15.Text = "+";
-            this.button15.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.Color.Silver;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(344, 358);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(85, 73);
+            this.btnAdd.TabIndex = 15;
+            this.btnAdd.Text = "+";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSubtract
             // 
@@ -389,7 +390,7 @@
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnSubtract);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnPlusMinus);
             this.Controls.Add(this.button12);
@@ -432,7 +433,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btnPlusMinus;
         private System.Windows.Forms.Button btnEquals;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnSubtract;
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Button btnDivide;

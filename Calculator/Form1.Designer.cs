@@ -41,7 +41,7 @@
             this.btn4 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnDecimal = new System.Windows.Forms.Button();
             this.btnPlusMinus = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -230,19 +230,20 @@
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
-            // button12
+            // btnDecimal
             // 
-            this.button12.BackColor = System.Drawing.Color.Silver;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(227, 452);
-            this.button12.Margin = new System.Windows.Forms.Padding(4);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(85, 73);
-            this.button12.TabIndex = 12;
-            this.button12.Text = ",";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnDecimal.BackColor = System.Drawing.Color.Silver;
+            this.btnDecimal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecimal.Location = new System.Drawing.Point(227, 452);
+            this.btnDecimal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDecimal.Name = "btnDecimal";
+            this.btnDecimal.Size = new System.Drawing.Size(85, 73);
+            this.btnDecimal.TabIndex = 12;
+            this.btnDecimal.Text = ",";
+            this.btnDecimal.UseVisualStyleBackColor = false;
+            this.btnDecimal.Click += new System.EventHandler(this.btnDecimal_Click);
             // 
             // btnPlusMinus
             // 
@@ -393,7 +394,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnPlusMinus);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn4);
@@ -430,7 +431,7 @@
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnPlusMinus;
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button btnAdd;

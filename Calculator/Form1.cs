@@ -29,7 +29,7 @@ namespace Calculator
             }
             else 
             { 
-            textBoxDisplay.Text += "2";
+                textBoxDisplay.Text += "2";
             }
         }
 
@@ -208,14 +208,20 @@ namespace Calculator
         }
         private double EvaluateExpression(string expression)
         {
-            //Create a new DataTable
-            DataTable table = new DataTable();
-
-            //Use the Compute method to evaluate the expression
-            double result = (double)table.Compute(expression, null);
-
-            //Return the result
-            return result;
+            //Replace commas with periods in the expression
+            expression = expression.Replace(",", ".");
+            try
+            {
+                var dataTable = new DataTable();
+                var result = dataTable.Compute(expression, "");
+                return Convert.ToDouble(result);
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions that are thrown
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
@@ -234,6 +240,16 @@ namespace Calculator
         {
             //Append "+" to the end of the current text
             textBoxDisplay.Text +="+";
+        }
+
+        private void btnDecimal_Click(object sender, EventArgs e)
+        {
+            //Check if the current text in the disply does not already contain a decimal point
+            if (!textBoxDisplay.Text.Contains(","))
+            {
+                //If it deos not, append "," to the end of the current text
+                textBoxDisplay.Text += ",";
+            }
         }
     }
 }

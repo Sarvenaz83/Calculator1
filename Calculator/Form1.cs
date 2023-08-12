@@ -208,9 +208,14 @@ namespace Calculator
         }
         private double EvaluateExpression(string expression)
         {
-            //TODO: Implement this method to evaluate the given expression
-            //and return the result as a double
-            throw new NotImplementedException();
+            //Create a new DataTable
+            DataTable table = new DataTable();
+
+            //Use the Compute method to evaluate the expression
+            double result = (double)table.Compute(expression, null);
+
+            //Return the result
+            return result;
         }
     }
 }

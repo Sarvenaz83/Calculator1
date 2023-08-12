@@ -45,7 +45,7 @@
             this.btnPlusMinus = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnSubtract = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
             this.btnPercent = new System.Windows.Forms.Button();
@@ -288,19 +288,20 @@
             this.button15.Text = "+";
             this.button15.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // btnSubtract
             // 
-            this.button16.BackColor = System.Drawing.Color.Silver;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(344, 262);
-            this.button16.Margin = new System.Windows.Forms.Padding(4);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(85, 73);
-            this.button16.TabIndex = 16;
-            this.button16.Text = "-";
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnSubtract.BackColor = System.Drawing.Color.Silver;
+            this.btnSubtract.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSubtract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubtract.Location = new System.Drawing.Point(344, 262);
+            this.btnSubtract.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubtract.Name = "btnSubtract";
+            this.btnSubtract.Size = new System.Drawing.Size(85, 73);
+            this.btnSubtract.TabIndex = 16;
+            this.btnSubtract.Text = "-";
+            this.btnSubtract.UseVisualStyleBackColor = false;
+            this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
             // 
             // btnMultiply
             // 
@@ -387,7 +388,7 @@
             this.Controls.Add(this.btnPercent);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMultiply);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btnSubtract);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnPlusMinus);
@@ -432,7 +433,7 @@
         private System.Windows.Forms.Button btnPlusMinus;
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnSubtract;
         private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Button btnPercent;

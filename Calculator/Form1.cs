@@ -19,7 +19,6 @@ namespace Calculator
             //Set the text in the display to "0"
             textBoxDisplay.Text = "0";
         }
-
      
         private void btn2_Click(object sender, EventArgs e)
         {

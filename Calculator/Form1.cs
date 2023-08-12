@@ -1,0 +1,148 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Calculator
+{
+    public partial class Calculator : Form
+    {
+        public Calculator()
+        {
+            InitializeComponent();
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            //Check for current text in the display is "0"
+            if (textBoxDisplay.Text == "0")
+            {
+                //If it is, replace the text with "1"
+                textBoxDisplay.Text = "1";
+            }
+            else
+            {
+                //otherwise, append "1" to the end of the current text
+                textBoxDisplay.Text += "1";
+            }
+        }
+
+     
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "2";
+            }
+            else 
+            { 
+            textBoxDisplay.Text += "2";
+            }
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "3";
+            }
+            else
+            {
+                textBoxDisplay.Text += "3";
+            }
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "4";
+            }
+            else
+            {
+                textBoxDisplay.Text += "4";
+            }
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "5";
+            }
+            else
+            {
+                textBoxDisplay.Text += "5";
+            }
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "6";
+            }
+            else
+            {
+                textBoxDisplay.Text += "6";
+            }
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "7";
+            }
+            else
+            {
+                textBoxDisplay.Text += "7";
+            }
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "8";
+            }
+            else
+            {
+                textBoxDisplay.Text += "8";
+            }
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            if (textBoxDisplay.Text == "0")
+            {
+                textBoxDisplay.Text = "9";
+            }
+            else
+            {
+                textBoxDisplay.Text += "9";
+            }
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            //Check if current text in the display is "0"
+            if (textBoxDisplay.Text != "0")
+            {
+                //If it is not, append "0" to the end of the current text
+                textBoxDisplay.Text += "0";
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            //Set the text in the display to "0"
+            textBoxDisplay.Text = "0";
+        }
+    }
+}

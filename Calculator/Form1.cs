@@ -15,21 +15,9 @@ namespace Calculator
         public Calculator()
         {
             InitializeComponent();
-        }
 
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            //Check for current text in the display is "0"
-            if (textBoxDisplay.Text == "0")
-            {
-                //If it is, replace the text with "1"
-                textBoxDisplay.Text = "1";
-            }
-            else
-            {
-                //otherwise, append "1" to the end of the current text
-                textBoxDisplay.Text += "1";
-            }
+            //Set the text in the display to "0"
+            textBoxDisplay.Text = "0";
         }
 
      
@@ -143,6 +131,37 @@ namespace Calculator
         {
             //Set the text in the display to "0"
             textBoxDisplay.Text = "0";
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            //Check for current text in the display is "0"
+            if (textBoxDisplay.Text == "0")
+            {
+                //If it is, replace the text with "1"
+                textBoxDisplay.Text = "1";
+            }
+            else
+            {
+                //otherwise, append "1" to the end of the current text
+                textBoxDisplay.Text += "1";
+            }
+        }
+
+        private void btnPlusMinus_Click(object sender, EventArgs e)
+        {
+            //Check if the current text in the display is not empty
+            if (!string.IsNullOrEmpty(textBoxDisplay.Text))
+            {
+                //If it is not, parse the current text as a double
+                double currentValue = double.Parse(textBoxDisplay.Text);
+
+                //Negate the current value
+                currentValue = -currentValue;
+
+                //Update the text in the display with the new value
+                textBoxDisplay.Text = currentValue.ToString();
+            }
         }
     }
 }

@@ -217,5 +217,11 @@ namespace Calculator
             //Return the result
             return result;
         }
+
+        private void btnMultiply_Click(object sender, EventArgs e)
+        {
+            //Append "*" to the end of the current text
+            textBoxDisplay.Text += "*";
+        }
     }
 }

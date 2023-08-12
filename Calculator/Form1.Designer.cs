@@ -46,7 +46,7 @@
             this.btnEquals = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnMultiply = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
             this.btnPercent = new System.Windows.Forms.Button();
             this.btnOpenParanthesis = new System.Windows.Forms.Button();
@@ -302,19 +302,20 @@
             this.button16.Text = "-";
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnMultiply
             // 
-            this.button17.BackColor = System.Drawing.Color.Silver;
-            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(344, 170);
-            this.button17.Margin = new System.Windows.Forms.Padding(4);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(85, 73);
-            this.button17.TabIndex = 17;
-            this.button17.Text = "*";
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnMultiply.BackColor = System.Drawing.Color.Silver;
+            this.btnMultiply.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiply.Location = new System.Drawing.Point(344, 170);
+            this.btnMultiply.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMultiply.Name = "btnMultiply";
+            this.btnMultiply.Size = new System.Drawing.Size(85, 73);
+            this.btnMultiply.TabIndex = 17;
+            this.btnMultiply.Text = "*";
+            this.btnMultiply.UseVisualStyleBackColor = false;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btnDivide
             // 
@@ -385,7 +386,7 @@
             this.Controls.Add(this.btnOpenParanthesis);
             this.Controls.Add(this.btnPercent);
             this.Controls.Add(this.btnDivide);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.btnEquals);
@@ -432,7 +433,7 @@
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Button btnPercent;
         private System.Windows.Forms.Button btnOpenParanthesis;

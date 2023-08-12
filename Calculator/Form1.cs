@@ -163,5 +163,54 @@ namespace Calculator
                 textBoxDisplay.Text = currentValue.ToString();
             }
         }
+
+        private void btnOpenParanthesis_Click(object sender, EventArgs e)
+        {
+            //Append "(" to the end of the current text
+            textBoxDisplay.Text += "(";
+        }
+
+        private void btnCloseParanthesis_Click(object sender, EventArgs e)
+        {
+            //Append ")" to the end of the current text
+            textBoxDisplay.Text += ")";
+        }
+
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            //Check if the current text in the display is not empty
+            if (!string.IsNullOrEmpty(textBoxDisplay.Text))
+            {
+                //If it is not, parse the current text as a double
+                double currentValue = double.Parse(textBoxDisplay.Text);
+
+                //Calculate the percentage value
+                currentValue= currentValue / 100;
+
+                //Update the text in the display with the new value
+                textBoxDisplay.Text = currentValue.ToString();
+            }
+        }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+            //Append "/" to the end of the current text
+            textBoxDisplay.Text += "/";
+        }
+
+        private void btnEquals_Click(object sender, EventArgs e)
+        {
+            //Evaluate the current expression in the display
+            double result = EvaluateExpression(textBoxDisplay.Text);
+
+            //Update the text in the display with the result
+            textBoxDisplay.Text = result.ToString();
+        }
+        private double EvaluateExpression(string expression)
+        {
+            //TODO: Implement this method to evaluate the given expression
+            //and return the result as a double
+            throw new NotImplementedException();
+        }
     }
 }

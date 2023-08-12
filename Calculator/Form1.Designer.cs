@@ -43,11 +43,11 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.btnPlusMinus = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnEquals = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.btnDivide = new System.Windows.Forms.Button();
             this.btnPercent = new System.Windows.Forms.Button();
             this.btnOpenParanthesis = new System.Windows.Forms.Button();
             this.btnCloseParanthesis = new System.Windows.Forms.Button();
@@ -259,19 +259,20 @@
             this.btnPlusMinus.UseVisualStyleBackColor = false;
             this.btnPlusMinus.Click += new System.EventHandler(this.btnPlusMinus_Click);
             // 
-            // button14
+            // btnEquals
             // 
-            this.button14.BackColor = System.Drawing.Color.Silver;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(344, 452);
-            this.button14.Margin = new System.Windows.Forms.Padding(4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(85, 73);
-            this.button14.TabIndex = 14;
-            this.button14.Text = "=";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnEquals.BackColor = System.Drawing.Color.Silver;
+            this.btnEquals.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquals.Location = new System.Drawing.Point(344, 452);
+            this.btnEquals.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEquals.Name = "btnEquals";
+            this.btnEquals.Size = new System.Drawing.Size(85, 73);
+            this.btnEquals.TabIndex = 14;
+            this.btnEquals.Text = "=";
+            this.btnEquals.UseVisualStyleBackColor = false;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
             // button15
             // 
@@ -315,19 +316,20 @@
             this.button17.Text = "*";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // btnDivide
             // 
-            this.button18.BackColor = System.Drawing.Color.Silver;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(344, 78);
-            this.button18.Margin = new System.Windows.Forms.Padding(4);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(85, 73);
-            this.button18.TabIndex = 18;
-            this.button18.Text = "/";
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnDivide.BackColor = System.Drawing.Color.Silver;
+            this.btnDivide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDivide.Location = new System.Drawing.Point(344, 78);
+            this.btnDivide.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDivide.Name = "btnDivide";
+            this.btnDivide.Size = new System.Drawing.Size(85, 73);
+            this.btnDivide.TabIndex = 18;
+            this.btnDivide.Text = "/";
+            this.btnDivide.UseVisualStyleBackColor = false;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
             // btnPercent
             // 
@@ -382,11 +384,11 @@
             this.Controls.Add(this.btnCloseParanthesis);
             this.Controls.Add(this.btnOpenParanthesis);
             this.Controls.Add(this.btnPercent);
-            this.Controls.Add(this.button18);
+            this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnPlusMinus);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.btn2);
@@ -427,11 +429,11 @@
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btnPlusMinus;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Button btnPercent;
         private System.Windows.Forms.Button btnOpenParanthesis;
         private System.Windows.Forms.Button btnCloseParanthesis;

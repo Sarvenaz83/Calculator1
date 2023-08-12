@@ -48,8 +48,9 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.btnPercent = new System.Windows.Forms.Button();
+            this.btnOpenParanthesis = new System.Windows.Forms.Button();
+            this.btnCloseParanthesis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxDisplay
@@ -328,41 +329,59 @@
             this.button18.Text = "/";
             this.button18.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // btnPercent
             // 
-            this.button19.BackColor = System.Drawing.Color.Silver;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(227, 78);
-            this.button19.Margin = new System.Windows.Forms.Padding(4);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(85, 73);
-            this.button19.TabIndex = 19;
-            this.button19.Text = "%";
-            this.button19.UseVisualStyleBackColor = false;
+            this.btnPercent.BackColor = System.Drawing.Color.Silver;
+            this.btnPercent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPercent.Location = new System.Drawing.Point(227, 78);
+            this.btnPercent.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPercent.Name = "btnPercent";
+            this.btnPercent.Size = new System.Drawing.Size(85, 73);
+            this.btnPercent.TabIndex = 19;
+            this.btnPercent.Text = "%";
+            this.btnPercent.UseVisualStyleBackColor = false;
+            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
             // 
-            // button20
+            // btnOpenParanthesis
             // 
-            this.button20.BackColor = System.Drawing.Color.Silver;
-            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(119, 78);
-            this.button20.Margin = new System.Windows.Forms.Padding(4);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(85, 73);
-            this.button20.TabIndex = 20;
-            this.button20.Text = "()";
-            this.button20.UseVisualStyleBackColor = false;
+            this.btnOpenParanthesis.BackColor = System.Drawing.Color.Silver;
+            this.btnOpenParanthesis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenParanthesis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenParanthesis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenParanthesis.Location = new System.Drawing.Point(119, 78);
+            this.btnOpenParanthesis.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOpenParanthesis.Name = "btnOpenParanthesis";
+            this.btnOpenParanthesis.Size = new System.Drawing.Size(43, 73);
+            this.btnOpenParanthesis.TabIndex = 20;
+            this.btnOpenParanthesis.Text = "(";
+            this.btnOpenParanthesis.UseVisualStyleBackColor = false;
+            this.btnOpenParanthesis.Click += new System.EventHandler(this.btnOpenParanthesis_Click);
+            // 
+            // btnCloseParanthesis
+            // 
+            this.btnCloseParanthesis.BackColor = System.Drawing.Color.Silver;
+            this.btnCloseParanthesis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCloseParanthesis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseParanthesis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseParanthesis.Location = new System.Drawing.Point(164, 78);
+            this.btnCloseParanthesis.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCloseParanthesis.Name = "btnCloseParanthesis";
+            this.btnCloseParanthesis.Size = new System.Drawing.Size(40, 73);
+            this.btnCloseParanthesis.TabIndex = 21;
+            this.btnCloseParanthesis.Text = ")";
+            this.btnCloseParanthesis.UseVisualStyleBackColor = false;
+            this.btnCloseParanthesis.Click += new System.EventHandler(this.btnCloseParanthesis_Click);
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 549);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button19);
+            this.Controls.Add(this.btnCloseParanthesis);
+            this.Controls.Add(this.btnOpenParanthesis);
+            this.Controls.Add(this.btnPercent);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
@@ -413,8 +432,9 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button btnPercent;
+        private System.Windows.Forms.Button btnOpenParanthesis;
+        private System.Windows.Forms.Button btnCloseParanthesis;
     }
 }
 
